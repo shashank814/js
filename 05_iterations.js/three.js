@@ -27,11 +27,11 @@ map.set('USA', 'United State Of America');
 // console.log(map);
 
 for (const [key, value] of map) {
-    console.log(key, ':-', value);
+    // console.log(key, ':-', value);
 }
 
 const myObject = {
-    'game1': 'NFS'
+    'game1': 'NFS',
     'game2': 'BGMI'
 }
 
@@ -41,3 +41,43 @@ for (const [key, value] of myObject) {
     
 }
     */
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach(function (val){
+    // console.log(val);
+})
+
+coding.forEach( (item) => {
+    // console.log(item);
+})
+
+function printMe(item){
+   //  console.log(item);
+}
+
+coding.forEach(printMe)
+
+coding.forEach( (item, index, arr)=> {
+    // console.log(item, index, arr);
+} )
+
+const myCoding = [
+    {
+        languageName: "java",
+        languageFileName: "js"
+    },
+    {
+        languageName: "javascript",
+        languageFileName: "java"
+    },
+    {
+        languageName: "python",
+        languageFileName: "python"
+    }
+]
+
+myCoding.forEach( (item) => {
+    console.log(item.languageName);
+    
+})
